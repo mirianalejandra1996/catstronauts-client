@@ -7,6 +7,7 @@ import Module from "./module";
 
 export default function Pages() {
   return (
+    // <BrowserRouter basename='/catstronauts'>
     <BrowserRouter>
       <Routes>
         <Route element={<Tracks />} path="/" />
