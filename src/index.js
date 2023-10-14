@@ -4,11 +4,10 @@ import GlobalStyles from "./styles";
 import Pages from "./pages";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
-// const API_BASE_URL = process.env.REACT_APP_API_URL
-const API_BASE_URL = "https://catstronauts-server-production-74bd.up.railway.app/"
+const API_BASE_URL = process.env.REACT_APP_API_URL
 
 const client = new ApolloClient({
-  uri: API_BASE_URL, // change to YOUR own production server
+  uri: API_BASE_URL,
   cache: new InMemoryCache(),
   name: "web",
   version: "1.0",
